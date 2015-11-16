@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="angular.min.js"></script>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href = "styles.css" rel="stylesheet"/>
+	<script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="weatherController">
+		<div class = "weather">
+			{{dailyWeather.apparentTemperature | number:0}}
+			  <canvas id="clear-day" width="64" height="64"></canvas>
+    	</div>
+    	<div class="wind">
+    		W:{{dailyWeather.windSpeed | number:1}}
+    		<canvas id="wind" width="40" height="40"></canvas>
+			
+		</div>
+		<div class="weekly">
+			<div ng-repeat="days in allWeather" ng-if="$index > 0 && $index != allWeather.length-1">
+				<div class="week-styles">
+					{{days.time * 1000 | date:'EEE'}}
+					{{days.temperatureMin | number:0}} - {{days.temperatureMax | number:0}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+
+</script>
+
+<script src="skycons.js"></script>
+</body>
+</html>
+

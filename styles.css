@@ -1,0 +1,29 @@
+body{
+  color:white;
+  background:url('http://d2tbfnbweol72x.cloudfront.net/wp-content/blogs.dir/1169/files/2014/06/Aldeen-Aerial-Photgraphy-1-6-14-Jeff-Anderson.jpg') no-repeat center center fixed;
+  font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h2{
+	 font-family:'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+.weather{
+  color: #fff;
+  font-size: 5.3em;
+  font-weight: 300;
+  text-align: center;
+  margin-top:15%;
+}
+.wind{
+  color: #fff;
+  font-size: 2.4em;
+  font-weight: 300;
+  text-align: center;
+}
+.week-styles{
+	text-align: center;
+	font-size:1.8em;
+	margin-top:10px;
+}
